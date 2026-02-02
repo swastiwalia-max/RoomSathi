@@ -1,0 +1,274 @@
+Build a highly polished, visually engaging hostel expense manager web app using HTML, CSS, and JavaScript only.
+
+The project is judged PRIMARILY on UI/UX quality.
+The interface must feel modern, calm yet lively, friendly, and confidence-inspiring.
+It must NOT feel flat, dull, wireframe-like, or corporate/fintech-style.
+
+------------------------------------------------
+TECH RULES
+------------------------------------------------
+- Frontend only
+- No backend
+- No authentication
+- Use localStorage for persistence
+- Use Charts.js for visual summaries
+- Code must be simple, readable, and beginner-friendly
+- A polished MVP covering all core flows is sufficient
+
+------------------------------------------------
+TARGET USER
+------------------------------------------------
+Indian hostel students who:
+- Live in shared rooms
+- Manage both personal and shared expenses
+- Prefer clarity over complex finance tools
+- Mostly use mobile devices
+- Want a calm, friendly, non-intimidating interface
+
+This is NOT a fintech app. It is a student utility.
+
+------------------------------------------------
+CORE PRODUCT IDEA
+------------------------------------------------
+A room-based hostel expense manager that helps students:
+- Organise money room-wise
+- Separate personal and shared spending
+- Avoid confusion and end-of-month conflicts
+- Understand finances at a glance
+
+The app should feel like it gently guides a new hostel student, not overwhelms them.
+
+------------------------------------------------
+MANDATORY FEATURES (A → E)
+------------------------------------------------
+
+A. ROOM-BASED DESIGN
+- Users must create or join a room before using the app
+- Rooms act as shared financial spaces for roommates
+- No app usage outside a room
+
+B. DUAL BUDGET SYSTEM
+- Personal Monthly Budget (individual spending)
+- Communal Monthly Budget (shared room expenses)
+- Clear visual separation between the two
+
+C. EXPENSE TYPE TOGGLE
+Every expense must be marked as:
+- Personal Expense
+- Shared Room Expense
+
+Shared expenses must:
+- Auto-split equally among roommates
+- Reflect correctly in settlements
+
+D. SETTLEMENT VIEW
+- Clear summary showing who pays whom and how much
+- Informational only (no payments)
+- Designed to reduce awkward hostel money conversations
+
+E. MONTH RESET & ARCHIVE
+- End-of-month summary screen
+- “Start New Month” action
+- Previous month data archived in localStorage
+
+------------------------------------------------
+APP ENTRY FLOW (VERY IMPORTANT)
+------------------------------------------------
+
+FIRST SCREEN: ROOM ACCESS
+- Two primary CTA buttons:
+  - Create a Room
+  - Join a Room
+- Clean, welcoming layout
+- Helper text:
+  “Rooms help manage shared hostel expenses together.”
+
+CREATE ROOM:
+- Input room name
+- Generate a room code
+- Continue to room setup
+
+JOIN ROOM:
+- Input room code
+- Enter room dashboard
+
+No pre-filled rooms, names, or demo data on load.
+Empty states must be thoughtfully designed.
+
+------------------------------------------------
+ROOM SETUP FLOW
+------------------------------------------------
+
+1. ADD ROOMMATES
+- User included by default
+- Add roommate names manually
+- Editable, card-based list
+- Friendly, non-technical copy
+
+2. SET BUDGETS
+- Personal Monthly Budget (₹)
+- Communal Monthly Budget (₹)
+- Helper text:
+  “Personal expenses stay individual.
+   Communal expenses are shared equally.”
+
+------------------------------------------------
+DESIGN PHILOSOPHY (MANDATORY)
+------------------------------------------------
+- Strong visual hierarchy
+- Clear primary actions
+- Calm but energetic student vibe
+- Friendly personality
+- High contrast where needed
+- Zero visual clutter
+
+------------------------------------------------
+COLOR SYSTEM (MUST USE)
+------------------------------------------------
+Primary Blue: #5B8CFF
+Accent Teal: #2EC4B6
+Highlight Purple: #8B5CF6
+Background Light: #F4F7FB
+Card White: #FFFFFF
+Text Dark: #111827
+Muted Text: #6B7280
+Success Green: #22C55E
+Warning Yellow: #FACC15
+Danger Red: #EF4444
+
+------------------------------------------------
+TYPOGRAPHY
+------------------------------------------------
+- Poppins (Google Fonts)
+- Large, bold headings
+- ₹ amounts visually emphasized
+- Clear spacing between sections
+
+------------------------------------------------
+GLOBAL UI TREATMENT (POP REQUIRED)
+------------------------------------------------
+- Light background with floating white cards
+- Cards:
+  - 14px rounded corners
+  - Soft layered shadows
+- Buttons:
+  - Bold colors
+  - Full-width on mobile
+  - Hover and active feedback
+- Micro-interactions:
+  - Card hover lift
+  - Button press feedback
+- No gradients
+- No harsh borders
+
+------------------------------------------------
+MAIN SCREENS
+------------------------------------------------
+
+1. DASHBOARD (HERO SCREEN)
+- Overview cards:
+  - Personal Budget Status
+  - Communal Budget Status
+- Animated-looking progress bars (CSS)
+- Friendly reassurance microcopy
+- Quick actions:
+  - Add Expense
+  - View Settlements
+  - View Insights
+
+2. ADD EXPENSE
+- Elevated card layout
+- Expense type toggle (Personal / Shared)
+- Amount input (₹)
+- Categories:
+  - Food / Mess
+  - Electricity
+  - Wi-Fi / Internet
+  - Travel
+  - Laundry
+  - Miscellaneous
+- Shared expenses auto-split
+- Primary CTA visually dominant
+
+3. EXPENSE FEED
+- Card-based timeline
+- Category tags with color chips
+- Amount emphasized
+- Date in muted text
+
+4. ROOMMATE BALANCES
+- Individual balance cards
+- Green tint: money to receive
+- Red tint: money to pay
+- Neutral, non-judgmental language
+
+5. SETTLEMENT VIEW
+- Simple list format:
+  “X pays Y ₹___”
+- Minimal, clarity-first design
+
+6. INSIGHTS
+- Pie chart using Charts.js
+- Category-wise spending
+- Clear legend
+- Title:
+  “Where the money went this month”
+
+7. MONTH SUMMARY & RESET
+- Monthly overview
+- “Start New Month” button
+- Archived data retained locally
+
+------------------------------------------------
+REMINDERS & NOTIFICATIONS
+------------------------------------------------
+- Bell icon in the app header
+- Clicking the bell shows:
+  - Pending dues
+  - Gentle payment reminders
+- Polite, neutral reminder language only
+
+Additionally:
+- Use browser/phone notifications where supported
+- No scheduling logic required
+
+------------------------------------------------
+UX PRINCIPLES (EXPLAIN IN CODE COMMENTS)
+------------------------------------------------
+Explain:
+- Why room-based design mirrors real hostel life
+- Why separating personal and communal budgets reduces conflict
+- Why progress bars improve comprehension
+- Why settlement previews reduce awkward conversations
+- Why month-wise reset matches student mental models
+
+------------------------------------------------
+MOBILE-FIRST REQUIREMENTS
+------------------------------------------------
+- Vertical stacking
+- Large tap targets
+- Comfortable thumb reach
+- No horizontal scrolling
+
+------------------------------------------------
+FILES
+------------------------------------------------
+index.html
+style.css
+script.js
+
+------------------------------------------------
+STRICTLY AVOID
+------------------------------------------------
+- Pre-filled sample data on load
+- Corporate or fintech visual language
+- Dense tables
+- Overloaded screens
+- Aggressive financial wording
+
+------------------------------------------------
+FINAL EXPECTATION
+------------------------------------------------
+The final product should feel like a demo-ready,
+student-designed hostel finance app with strong UI/UX presence
+that immediately impresses judges.
